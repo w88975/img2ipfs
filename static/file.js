@@ -143,7 +143,7 @@ $(() => {
             return xhr
           },
           success: res => {
-            var imgSrc = 'https://ipfs.cnzoe.com/' + btoa(res.Hash)
+            var imgSrc = 'https://ipfs.cnzoe.com/' + btoa(res.Hash.substring(1))
             console.log('cnzoe:', imgSrc);
             /* 清除input框 */
             $('#file').val(null)
