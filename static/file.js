@@ -144,6 +144,7 @@ $(() => {
           },
           success: res => {
             var imgSrc = 'https://ipfs.cnzoe.com/' + btoa(res.Hash)
+            console.log('cnzoe:', imgSrc);
             /* 清除input框 */
             $('#file').val(null)
             if (res.code === -1) {
